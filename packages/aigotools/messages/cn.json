@@ -6,13 +6,13 @@
     "dashboard": "控制台"
   },
   "footer": {
-    "slogan": "发现 10000+ 有用的AI工具",
+    "slogan": "发现优质设计工具与资源，助力全球成功",
     "submitATool": "提交工具",
     "aboutUs": "关于我们",
     "contactUs": "联系我们",
     "privacy": "隐私政策",
-    "latestSubmit": "最新提交",
-    "featured": "推荐",
+    "latestSubmit": "最新",
+    "featured": "精选",
     "blogs": "博客"
   },
   "upload": {
@@ -24,17 +24,17 @@
     "categoryManage": "分类管理"
   },
   "index": {
-    "slogan": "探索AI工具的无限宇宙",
-    "featured": "推荐",
+    "slogan": "引领全球设计卓越之路",
+    "featured": "精选",
     "latest": "最新",
-    "searchPlaceholder": "我想写一篇文章...",
-    "clearAll": "清除所有",
+    "searchPlaceholder": "我想找设计工具...",
+    "clearAll": "清除全部",
     "more": "更多 +"
   },
   "metadata": {
-    "title": "aiversetools.com",
-    "description": "AIverseTools 是领先的AI目录和搜索引擎。AIverseTools 帮助您发现最佳AI、应用程序和服务列表，并提升您的个人和商业生产力至新高度。",
-    "keywords": "开源AI导航站, AI目录, AI列表, AI搜索引擎, 人工智能应用程序, 最佳AI目录, 最佳AI, AI列表"
+    "title": "haifangfang - 引领全球设计卓越之路",
+    "description": "haifangfang是专业的设计导航平台，帮助全球创作者发现最优质的设计工具、资源和灵感，助力国际化成功。",
+    "keywords": "设计工具导航, 设计资源, 全球设计, 国际设计, 设计导航, 创意工具, 设计灵感, 全球设计"
   },
   "site": {
     "categories": "分类",
