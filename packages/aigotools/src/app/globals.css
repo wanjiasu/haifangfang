@@ -2,13 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --transition-duration: 0.3s;
+    /* Summer theme gradients */
+    --summer-gradient: linear-gradient(135deg, #FFE082 0%, #FF8F00 50%, #FF6B35 100%);
+    --summer-light-gradient: linear-gradient(135deg, #FFF8E1 0%, #FFE082 50%, #FFCA28 100%);
+    --summer-sunset-gradient: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 50%, #FF8E53 100%);
   }
 
   html {
     transition: background-color var(--transition-duration), color var(--transition-duration);
+  }
+
+  /* Summer theme body background */
+  body {
+    background: var(--summer-light-gradient);
+    background-attachment: fixed;
+  }
+
+  /* Summer decorative elements */
+  .summer-decoration::before {
+    content: '☀️';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .summer-decoration::after {
+    content: '🌴';
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    font-size: 1.2rem;
+    animation: sway 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+
+  /* Summer card styles */
+  .summer-card {
+    background: rgba(255, 248, 225, 0.9);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 202, 40, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(255, 139, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .summer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(255, 139, 0, 0.3);
+    border-color: rgba(255, 202, 40, 0.6);
+  }
+
+  /* Summer button styles */
+  .summer-btn {
+    background: var(--summer-gradient);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 139, 0, 0.3);
+  }
+
+  .summer-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 139, 0, 0.4);
   }
 }

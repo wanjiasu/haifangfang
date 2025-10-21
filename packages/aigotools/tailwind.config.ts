@@ -2,20 +2,33 @@ import type { Config } from "tailwindcss";
 
 import { nextui } from "@nextui-org/react";
 
-const LightColors = [
-  "#FAFAFA",
-  "#F4F4F5",
-  "#E4E4E7",
-  "#D4D4D8",
-  "#A1A1AA",
-  "#71717A",
-  "#52525B",
-  "#3F3F46",
-  "#27272A",
-  "#18181B",
+// Summer theme colors - warm, bright, and cheerful
+const SummerLightColors = [
+  "#FFF8E1", // Warm cream background
+  "#FFF3C4", // Light yellow
+  "#FFE082", // Soft yellow
+  "#FFD54F", // Medium yellow
+  "#FFCA28", // Bright yellow
+  "#FFC107", // Amber
+  "#FF8F00", // Orange
+  "#E65100", // Deep orange
+  "#BF360C", // Red-orange
+  "#3E2723", // Dark brown
 ];
 
-const DarkColors = [...LightColors].reverse();
+// Summer dark theme - sunset inspired
+const SummerDarkColors = [
+  "#1A1A2E", // Deep navy night
+  "#16213E", // Dark blue
+  "#0F3460", // Medium blue
+  "#533A71", // Purple
+  "#6A4C93", // Light purple
+  "#FF6B6B", // Coral
+  "#FFE66D", // Warm yellow
+  "#FF8E53", // Orange
+  "#FF6B35", // Red-orange
+  "#C7CEEA", // Light lavender
+];
 
 function stepColor(colors: string[]) {
   return {
@@ -51,30 +64,30 @@ const config: Config = {
         dark: {
           extend: "dark",
           colors: {
-            background: DarkColors[0],
-            foreground: DarkColors[7],
+            background: SummerDarkColors[0],
+            foreground: SummerDarkColors[9],
             primary: {
-              ...stepColor(DarkColors),
-              foreground: DarkColors[0],
-              DEFAULT: DarkColors[7],
+              ...stepColor(SummerDarkColors),
+              foreground: SummerDarkColors[0],
+              DEFAULT: SummerDarkColors[6],
             },
             divider: {
-              DEFAULT: DarkColors[4],
+              DEFAULT: SummerDarkColors[4],
             },
           },
         },
         light: {
           extend: "light",
           colors: {
-            background: LightColors[0],
-            foreground: LightColors[7],
+            background: SummerLightColors[0],
+            foreground: SummerLightColors[9],
             primary: {
-              ...stepColor(LightColors),
-              foreground: LightColors[0],
-              DEFAULT: LightColors[7],
+              ...stepColor(SummerLightColors),
+              foreground: SummerLightColors[0],
+              DEFAULT: SummerLightColors[6],
             },
             divider: {
-              DEFAULT: LightColors[4],
+              DEFAULT: SummerLightColors[4],
             },
           },
         },
